@@ -5,7 +5,7 @@ A Cordova/Phonegap driver for Zebra bluetooth printers
 You can send data in ZPL Zebra Programing Language:
 
 ```
-cordova.plugins.zbtprinter.print("^XA^FO10,10^AFN,26,13^FDHello, World!^FS^XZ",
+cordova.plugins.zbtprinter.print("AA:BB:CC:DD:EE:FF","^XA^FO10,10^AFN,26,13^FDHello, World!^FS^XZ",
     function(success) { 
         alert("Print ok"); 
     }, function(fail) { 
@@ -18,15 +18,7 @@ cordova.plugins.zbtprinter.print("^XA^FO10,10^AFN,26,13^FDHello, World!^FS^XZ",
 ###Cordova
 
 ```
-cordova plugin add https://github.com/mmilidoni/zbtprinter.git
-```
-
-###Very important!
-
-This plugin is in developer version, you need to set MAC Address of your printer at following file:
-
-```
-src/android/it/zenitlab/cordova/plugins/zbtprinter/ZebraBluetoothPrinter.java
+cordova plugin add https://github.com/berengan/zbtprinter.git
 ```
 
 ##ZPL - Zebra Programming Language
